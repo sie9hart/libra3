@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block Thirdcontent %}
+  <table>
+	
+	
+	
+	{%for j in st%}
+<tr>
+   	{{j.custname}} {{j.bookname}}
+    {% endfor %}
+	</td> 
+	</tr>
+	
+</table>
+  {% endblock  %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

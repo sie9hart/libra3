@@ -1,0 +1,27 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+  {% block Secondcontent %}
+  <table>
+	
+	
+	
+	{%for j in borrow_list%}
+<tr>
+   	 <td><a href= "{% url 'Borrow_details' j.id %}"> {{j.custname}} </a>
+    {% endfor %}
+	</td> 
+	</tr>
+	
+</table>
+
+  {% endblock  %}
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+  {% block Secondcontent %}
+
+
+<table>
+	
+	
+	
+	{%for j in my_list2%}
+<tr>
+   	 {j.studantname}} {{j.c_id}}
+    {% endfor %}
+	</td> 
+	</tr>
+	
+</table>
+{% endblock  %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+ {% block Secondcontent %}
+<table>
+	
+	
+	
+	{%for j in my_list2%}
+<tr>
+   	   ({{j.bookname}} , {{j.isbn}} )
+    
+	
+	</tr>
+{% endfor %}
+	
+</table>
+{% endblock  %}
